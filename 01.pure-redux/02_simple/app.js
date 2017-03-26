@@ -30,6 +30,20 @@ store.subscribe(() => {
 });
 
 // store 发布事件（action）
-store.dispatch({ type: 'RENAME', name: '高端大气上档次图书馆' });
-store.dispatch({ type: 'RENAME_WITH_CITY', data: { city: '深圳市', name: '低调奢华有内涵图书馆' } });
-store.dispatch({ type: 'UNKNOWN', name: '我要改名' });
+store.dispatch({
+    type: 'RENAME',
+    name: '高端大气上档次图书馆'
+});
+
+store.dispatch({
+    type: 'RENAME_WITH_CITY',
+    data: {
+        city: '深圳市',
+        name: '低调奢华有内涵图书馆'
+    }
+});
+
+store.dispatch({
+    type: 'UNKNOWN',
+    name: '我要改名'
+});
